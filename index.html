@@ -22,7 +22,16 @@
     />
 
     <!-- font-awesome-cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- javascript aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -33,9 +42,9 @@
         <header>
           <a href="#"><img src="./images/logo-light.png" alt="logo" /></a>
         </header>
-        <input type="checkbox" id="click">
+        <input type="checkbox" id="click" />
         <label for="click">
-            <i class="fa-solid fa-bars-staggered"></i>
+          <i class="fa-solid fa-bars-staggered"></i>
         </label>
         <nav>
           <li>Home</li>
@@ -49,6 +58,7 @@
         id="carouselExampleInterval"
         class="carousel slide"
         data-bs-ride="carousel"
+        data-aos="zoom-out" data-aos-duration="800"
       >
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
@@ -84,14 +94,15 @@
       <div
         class="container2 mx-5 py-3 d-flex justify-content-evenly align-items-center"
       >
-        <div id="text">
+        <div id="text" data-aos="fade-right" data-aos-anchor-placement="top-center">
+          >
           <h3>Top 5</h3>
           <h4>Meditational Plants</h4>
         </div>
         <video
           data-aos="fade-left"
-          data-aos-duration="500"
-          data-aos-delay="50"
+          data-aos-duration="800" 
+          data-aos-anchor-placement="top-center"
           autoplay
           muted
           loop
@@ -106,8 +117,8 @@
       <!-- cardssection -->
       <div class="container3 my-4">
         <div class="card-group container-fluid">
-          <div class="card mx-3">
-            <img src="./images/aloe-vera.jpg" class="card-img-top" alt="..." />
+          <div class="card mx-3" data-aos="fade-down" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
+            <img src="./images/aloe-vera.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Aloe Vera</h5>
               <p class="card-text">
@@ -122,8 +133,8 @@
               <button class="btn btn-success">Show more</button>
             </div>
           </div>
-          <div class="card mx-3">
-            <img src="./images/coriander.jpg" class="card-img-top" alt="..." />
+          <div class="card mx-3" data-aos="fade-down" data-aos-delay="100" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
+            <img src="./images/coriander.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Coriander</h5>
               <p class="card-text">
@@ -138,8 +149,8 @@
               <button class="btn btn-success">Show more</button>
             </div>
           </div>
-          <div class="card mx-3">
-            <img src="./images/fenugreek.jpg" class="card-img-top" alt="..." />
+          <div class="card mx-3" data-aos="fade-down" data-aos-delay="200" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
+            <img src="./images/fenugreek.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Fenugreek</h5>
               <p class="card-text">
@@ -155,8 +166,8 @@
               <button class="btn btn-success">Show more</button>
             </div>
           </div>
-          <div class="card mx-3">
-            <img src="./images/mint.jpg" class="card-img-top" alt="..." />
+          <div class="card mx-3" data-aos="fade-down" data-aos-delay="300" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
+            <img src="./images/mint.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Mint</h5>
               <p class="card-text">
@@ -172,8 +183,8 @@
               <button class="btn btn-success">Show more</button>
             </div>
           </div>
-          <div class="card mx-3">
-            <img src="./images/tulsi.jpg" class="card-img-top" alt="..." />
+          <div class="card mx-3" data-aos="fade-down" data-aos-delay="400" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
+            <img src="./images/tulsi.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Tulsi</h5>
               <p class="card-text">
@@ -189,6 +200,98 @@
           </div>
         </div>
       </div>
+
+      <!-- footer section -->
+      <div class="myfooter">
+        <div class="footer px-5">
+          <img data-aos="fade-right" src="./images/logo-light.png" alt="" />
+          <nav>
+            <div class="footer-links">
+              <div>
+                <ul>
+                  <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">Company</h2>
+                  <hr />
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">How it works</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Corporate Offering</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">Our work</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">Blog</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">About The Site</h2>
+                  <hr />
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">FAQs</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Privacy Policy</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">Our achievements</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">Our journey</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">Vision and Mission</li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="600">Contact Us</h2>
+                  <hr />
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">+919890-255-755</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Support@Palmeto.in</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">Privacy Policy</li>
+                  <li data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                    Patia , Bhubaneswar , Odisha <br />
+                    751024
+                  </li>
+                </ul>
+                <div class="email" data-aos="fade-left">
+                  <input type="email" />
+                  <button class="btn btn-success">Go</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- mini footer section -->
+
+      <div class="minifooter py-3">
+        <div class="copyright">
+          <p>
+            Copyright © 2023 All rights reserved | This template is made with ❤️
+            by Pinaki Sankar Ray
+          </p>
+        </div>
+        <div class="Socialicons">
+          <i
+            style="color: #0077b6"
+            id="facebook"
+            class="fa-brands fa-facebook-f"
+          ></i>
+          <i
+            style="color: #023e8a"
+            id="linkedin"
+            class="fa-brands fa-linkedin"
+          ></i>
+          <i
+            style="color: orangered"
+            id="instagram"
+            class="fa-brands fa-instagram"
+          ></i>
+          <i
+            style="color: #00b4d8"
+            id="twitter"
+            class="fa-brands fa-twitter"
+          ></i>
+          <i
+            style="color: #c1121f"
+            id="youtube"
+            class="fa-brands fa-youtube"
+          ></i>
+          <i
+            style="color: #660708"
+            id="pinterest"
+            class="fa-brands fa-pinterest"
+          ></i>
+        </div>
+      </div>
     </div>
 
     <script
@@ -196,5 +299,10 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
