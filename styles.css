@@ -32,15 +32,15 @@ body
   transition: all 0.5s ease-in-out;
 }
 
-img {
+.container1 img {
   width: 50%;
 }
 
-nav {
+.container1 nav {
   display: flex;
 }
 
-nav li {
+.container1 nav li {
   list-style: none;
   margin: 0rem 1rem;
 }
@@ -159,6 +159,12 @@ h2 {
     height: 2rem;
     width: 3rem;
   }
+
+  body
+{
+  scroll-behavior: smooth;
+  overflow-x:hidden;
+}
 }
 
 @media (max-width: 812px) and (min-width: 510px) {
@@ -197,6 +203,12 @@ h2 {
     display: block;
     text-align: center;
   }
+
+  body
+{
+  scroll-behavior: smooth;
+  overflow-x:hidden;
+}
 }
 
 @media (max-width: 569px) {
@@ -240,5 +252,11 @@ h2 {
     display: block;
     text-align: center;
   }
+
+  body
+{
+  scroll-behavior: smooth;
+  overflow-x:hidden;
+}
 
 }
